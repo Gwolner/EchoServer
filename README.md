@@ -1,4 +1,4 @@
-# Troca de mensagens entre cliente e servidor
+# Echo Server
 
 Atividade prática da disciplina de Sistemas Distribuídos que busca demonstrar a troca de mensagens (pacotes) entre cliente e servidor usando uma aplicação Java.
 
