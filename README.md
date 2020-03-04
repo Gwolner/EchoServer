@@ -57,6 +57,6 @@ Trata-se da troca de mensagens numéricas do tipo Double do cliente para o servi
 
 Esta quantidade aleatória é definida pelo método `10*Math.random()`, gerando numeros de 0 a 9, onde cada valor é fornecido na entrada padrão de dados pelo usuário (teclado).
 
-Outro ponto importante para a execução de ambos os arquivos neste diretório, é que não dependem do `telnet XXX.XXX.XXX.XXX PPPP`, apenas  do `java EchoServer`.
+Outro ponto importante para a execução de ambos os arquivos é que não dependem do `telnet XXX.XXX.XXX.XXX PPPP`, apenas  do `java EchoServer`.
 
 Além destas características o comportamento dar-se da seguinte maneira: os números são enviados criptografados para o servidor, descriptografados, somados, criptografados novamente, enviado para o cliente, descriptografado e exibido na tela como resposta do somatório. 
