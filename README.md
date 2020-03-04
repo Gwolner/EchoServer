@@ -50,3 +50,13 @@ Após seguir os passos descritos anteriormente, o arquivo <b>EchoServerCaesar.ja
 A implantação e uso deste algoritmo de criptografia permite que a mensagem que trafega do servidor para o cliente possa ter uma outra camada adicional de segurança. O sentido cliente servidor não obedece esta criptografia, pois a sua implementação é feita unicamente no lado servidor ([server-side](https://pt.wikipedia.org/wiki/Server-side)).
 
 Para maiores detalhes do algoritmo, não deixe de visitar meu [Gist](https://gist.github.com/Gwolner/7b718d4d27ba097017ee1e25a62e4ec5).
+
+## Teste criptografia
+
+Trata-se da troca de mensagens numéricas do tipo Double do cliente para o servidor. O diferencial desta comunicação é que o cliente pode enviar uma quantidade aleatória de valores em sequencia, sem esperar que o servidor mante uma resposta após cada mensagem de envio. 
+
+Esta quantidade aleatória é definida pelo método `10*Math.random()`, gerando numeros de 0 a 9, onde cada valor é fornecido na entrada padrão de dados pelo usuário (teclado).
+
+Outro ponto importante para a execução de ambos os arquivos neste diretório, é que não dependem do `telnet XXX.XXX.XXX.XXX PPPP`, apenas  do `java EchoServer`.
+
+Além destas características o comportamento dar-se da seguinte maneira: os números são enviados criptografados para o servidor, descriptografados, somados, criptografados novamente, enviado para o cliente, descriptografado e exibido na tela como resposta do somatório. 
